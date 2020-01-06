@@ -1,13 +1,12 @@
 'use strict';
 const Generator = require('yeoman-generator');
-const chalk = require('chalk');
 const yosay = require('yosay');
 
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome! This generator will help you create a starter component-library using react, storybook and rollup.`)
+      yosay(`Welcome! This generator will help you create a starter holiday list using parcel`)
     );
 
     const prompts = [
@@ -62,10 +61,6 @@ module.exports = class extends Generator {
       "react-dom": "^16.12.0"
     }
     
-    const packagePeerDependencies = {
-      "react": "^16.12.0",
-      "styled-components": "^4.4.1"
-    }
     
     const packageFile = {
         "name": `@${this.props.registryUserName}/${this.props.registryPackageName}`,
@@ -79,8 +74,7 @@ module.exports = class extends Generator {
         "author": `${this.props.authorName}`,
         "license": "ISC",
         "dependencies": packageDependencies,
-        "devDependencies": packageDevDependencies,
-        "peerDependencies": packagePeerDependencies
+        "devDependencies": packageDevDependencies
     };
 
     this.fs.extendJSON(this.destinationPath('package.json'), packageFile);
