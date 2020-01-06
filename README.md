@@ -1,4 +1,4 @@
-# generator-rskaggs-holiday-list-starter [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-rskaggs-holiday-list-starter 
 > A generator for a parcel based holiday list
 
 ## Installation
