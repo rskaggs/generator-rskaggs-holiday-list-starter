@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Russell Skaggs",
+      "authorEmail": "contact@russellskaggs.com",
+      "authorUrl": ""
+    }
+  }
+}
